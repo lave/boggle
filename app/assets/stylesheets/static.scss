@@ -1,0 +1,81 @@
+// Place all the styles related to the Game controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.main {
+    width: 400px;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+    justify-items: center;
+}
+.main > * {
+    display: inline-block;
+}
+
+.main fieldset {
+    border: 0;
+}
+
+.rules {
+    text-align: justify;
+}
+
+.board {
+    margin: 20px;
+    border: 2px solid darkblue;
+}
+
+.board td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.button {
+    margin: 10px;
+}
+
+
+.words {
+    display: table;
+    border: 1px solid black;
+    border-spacing: 0;
+    justify-self: stretch;
+}
+.words td {
+    padding: 5px 10px;
+}
+.wr-un {
+}
+.wr-ok {
+    background-color: palegreen;
+}
+.wr-short {
+    background-color: palegoldenrod;
+}
+.wr-bad {
+    background-color: lightpink;
+}
+.wr-total {
+    background-color: lightblue;
+}
+
+.timer {
+    font-size: x-large;
+}
+.timer-ok {
+    color: darkgreen
+}
+.timer-warn {
+    color: orange
+}
+.timer-dngr {
+    color: red
+}
